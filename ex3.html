@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Ex 3</title>
+	</head>
+	<body>
+		<label for="ageInput">Type your age: </label>
+		<input
+			type="number"
+			id="ageInput" />
+		<button
+			type="button"
+			onclick="ageVerification()">
+			CHECK
+		</button>
+		<script>
+			function ageVerification() {
+				let x = document.getElementById("ageInput").value;
+				if (x > 18) {
+					alert("You're an adult!");
+				} else {
+					alert("You're under 18 years old!!");
+				}
+			}
+		</script>
+	</body>
+</html>

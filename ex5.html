@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Ex 5</title>
+	</head>
+	<body>
+		<label for="ageInput">Type a number to see its double: </label>
+		<input
+			type="number"
+			id="ageInput" />
+		<button
+			type="button"
+			onclick="double()">
+			See
+		</button>
+		<script>
+			function double() {
+				let x = document.getElementById("ageInput").value;
+				x *= 2;
+				return alert(x);
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Ex 4</title>
+	</head>
+	<body>
+		<button
+			type="button"
+			onclick="loop()">
+			1-5 Click here
+		</button>
+		<div id="containerLoop"></div>
+		<script>
+			function loop() {
+				const numbers = [1, 2, 3, 4, 5];
+				let container = document.getElementById("containerLoop");
+				for (number in numbers) {
+					let numbersScreen = document.createElement("p");
+					numbersScreen.textContent = Number(number) + 1;
+					container.appendChild(numbersScreen);
+				}
+			}
+		</script>
+	</body>
+</html>
